@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02</title>
+</head>
+<body>
+    <h1>Data Types</h1>
+    <h2>Numbers</h2>
+    <h2>String</h2>
+    <h2>Boolean</h2>
+    <h2>Object - array / object</h2>
+    <h2>date</h2>
+    
+<script>
+    console.log("Day 02 started!")
+    // object - array
+    let string_array = ["John Doe","Jane Smith"]
+    let number_array = [1,2,3,4,5]
+    let mixed_array = [1,"John Doe",true]
+    let array_of_objects = [
+        {"id":1,"name":"John Doe"},
+        {"id":2,"name":"Jane Smith"}
+    ]
+    // object - object
+    let sample_data = {"id":2,"name":"Jane Smith"}
+
+    // array operations - string_array
+    // Accessing array elements using index
+    console.log("String array ",string_array)
+    console.log("arrray element 0 ",string_array[0])
+    console.log("arrray element 1 ",string_array[1])
+    console.log("arrray element 2 ",string_array[2])
+
+    string_array[0]="0"
+    string_array[1]=true
+    string_array[2]="2"
+    string_array[10]={"id":1,"name":"John Doe"}
+
+    console.log("String array ",string_array)
+    console.log("arrray element 0 ",string_array[0])
+    console.log("arrray element 1 ",string_array[1])
+    console.log("arrray element 2 ",string_array[2])
+    console.log("arrray element 10 ",string_array[10])
+
+    string_array.push("New Element")
+    console.log("String array ",string_array)
+
+    string_array.pop()
+   
+    console.log("String array ",string_array)
+
+    console.log("Program executed successfully!")
+
+</script>
+
+</body>
+</html>
