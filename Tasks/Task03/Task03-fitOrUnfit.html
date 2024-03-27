@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit or Unfit</title>
+</head>
+<body>
+    <h1>To Check wether you are fit for a solider</h1>
+    <div>Modify the program and check candidate qualification and his nation</div>
+    <div>Conditions: candidate must pass 10th to qualifiy for it</div>
+    <div>Conditions: candidate Nation must be indian</div>
+    <div>Deadline : 29-03-2024</div>
+    
+
+<script>
+
+let limit = 10
+let count = 0
+
+while(true){
+
+    let is_age_ok = false;
+    let is_height_ok = false;
+    let is_weight_ok = false;
+
+    let age = prompt("Enter your age: ");
+    let height = prompt("Enter your height in cm: ");
+    let weight = prompt("Enter your weight in kg: ");
+
+    if(age>18){
+        is_age_ok = true
+    }  
+    if(height>6){ // in feet
+        is_height_ok = true
+    }
+    if(weight>60){ // in kg
+        is_weight_ok = true
+    }
+
+    if(is_age_ok && is_height_ok && is_weight_ok){
+        alert("You are fit for a solider")
+    }else{
+        alert("You are unfit for a solider")
+    }
+
+    if(count == 10){
+        alert("You have reached maximum attempt")
+        break;
+    }
+
+    let proceed = confirm("Do you want to continue?")
+    if(!proceed){
+        break;
+    }
+
+}
+    
+
+
+</script>
+</body>
+</html>
