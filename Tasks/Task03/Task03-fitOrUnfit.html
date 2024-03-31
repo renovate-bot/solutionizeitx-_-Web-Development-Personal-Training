@@ -31,7 +31,7 @@ while(true){
     let height = prompt("Enter your height in ft: ");
     let weight = prompt("Enter your weight in kg: ");
     let nationality = prompt("Enter your nationality: ");
-    let qualification = prompt("Enter your qualification: ");
+    let qualification = prompt("Are you 10th qualified?: ");
 
     if(age>18){
         is_age_ok = true
@@ -45,7 +45,7 @@ while(true){
     if(nationality == "indian"){
         is_nationality_ok = true
     }
-    if(nationality == "10th pass"){
+    if(qualification == "Yes"){
         is_qualification_ok = true
     }
     if(is_age_ok && is_height_ok && is_weight_ok &&is_nationality_ok &&is_qualification_ok ){
