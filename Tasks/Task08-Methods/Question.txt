@@ -4,26 +4,93 @@ Basic String Methods
 Javascript strings are primitive and immutable: All string methods produces a new string without altering the original string.
 
 String length
+>>Used to find the length of the string.
+ Syntax
+ length=variable.length;
+
+
 String charAt()
+String charAt() method retrieves the character at a specified index in a string
+ Syntax
+  character= str.charAt(index)
 String charCodeAt()
+str.charCodeAt() method returns a Unicode character set code unit of the character present at the index in the string 
+  Syntax
+  unicode_value= str.charCodeAt(index)
 String at()
+The at() method returns an indexed character from a string.
+  Syntax
+  character=string.at(index)
 String [ ]
+   The at() method returns the same as [].
 String slice()
+   The slice() method extracts a part of a string and returns the extracted part
+   Syntax
+   value = string.slice(index)
 String substring()
+The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
+  Syntax
+  value=string.substring(index)
+  
 String substr()
+The substr() method extracts a part of a string.
+  Syntax
+  value=string.substr(index)
+  
 
 See Also:
 String Search Methods
 String Templates
 String toUpperCase()
+The toUpperCase() method converts a string to uppercase letters.
+Syntax
+output=string.toUpperCase()
+
 String toLowerCase()
+The toLowerCase() method converts a string to lowercase letters.
+Syntax
+output=string.toLowerrCase()
 String concat()
+The concat() method joins two or more strings.
+result=string1.concat(string2)
 String trim()
+Removes whitespace from both sides of a string.
+Syntax
+Value=string.trim()
 String trimStart()
+The trimStart() method removes whitespace from the beginning of a string.
+Syntax
+Value=string.trimstart()
 String trimEnd()
+The trimEnd() method removes whitespace from the end of a string.
+Syntax
+Value=string.trimEnd()
 String padStart()
+The padStart() method pads a string from the start.
+Syntax
+string.padStart(length, string)
 String padEnd()
+The padEnd() method pads a string from the end.
+Syntax
+string.padEndt(length, string)
 String repeat()
+repeat() returns a new string with a number of copies of a string
+Syntax
+Syntax
+string.repeat(count)
 String replace()
+
+replace() searches a string for a value, and returns a new string with the specified value(s) replaced
+Syntax
+string.replace(searchValue, newValue)
 String replaceAll()
+The replaceAll() method searches a string for a value or a regular expression.
+Syntax
+string.replaceAll(searchValue, newValue)
+
 String split()
+split() splits a string into an array of substrings, and returns the array.
+Syntax
+string.split(separator, limit)
+
+

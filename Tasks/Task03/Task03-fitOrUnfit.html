@@ -24,12 +24,14 @@ while(true){
     let is_height_ok = false;
     let is_weight_ok = false;
     let is_nationality_ok = false;
+    let is_qualification_ok = false;
     
 
     let age = prompt("Enter your age: ");
     let height = prompt("Enter your height in ft: ");
     let weight = prompt("Enter your weight in kg: ");
     let nationality = prompt("Enter your nationality: ");
+    let qualification = prompt("Are you 10th qualified? ");
 
     if(age>18){
         is_age_ok = true
@@ -43,11 +45,14 @@ while(true){
     if(nationality == "indian"){
         is_nationality_ok = true
     }
-    if(is_age_ok && is_height_ok && is_weight_ok && is_nationality_ok){
+    if(qualification == "Yes"){
+        is_qualification_ok = true
+    }
+    if(is_age_ok && is_height_ok && is_weight_ok &&is_nationality_ok &&is_qualification_ok ){
         alert("You are fit for a solider")
     } else
     {
-        alert("You are not unfit for a solider");
+        alert("You are  unfit for a solider");
     }
 
     if(count == 10){
