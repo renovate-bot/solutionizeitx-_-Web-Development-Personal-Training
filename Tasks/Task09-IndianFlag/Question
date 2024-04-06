@@ -1,1 +1,20 @@
 Design indian flag design using div, you can use image from google for ashoka chakkra.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag</title>
+    <style>
+        .firstsegment {
+            width:50px;
+            height:10px;
+            background-color:orange;}
+      
+    </style>
+</head>
+<body>
+    <div class="firstsegment"></div>
+    
+</body>
+</html>
