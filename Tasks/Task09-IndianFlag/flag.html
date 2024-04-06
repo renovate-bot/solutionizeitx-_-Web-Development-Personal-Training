@@ -6,55 +6,27 @@ Design indian flag design using div, you can use image from google for ashoka ch
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Flag</title>
     <style>
+        .dimension{
+            width:250px;
+            height:60px;
+        }
         .firstsegment {
-            width:250px;
-            height:45px;
-            background-color:orange;
-            margin:30px 200px;
-            
-            
-            }
+            background-color:orange;    
+        }
         .secondsegment {
-            width:250px;
-            height:45px;
-            background-color:rgb(245, 233, 233);
-            margin:30px 200px;
-            position:absolute;
-            top:70px;
-            
-            
-            }
+            background-image: url("Ashoka_Chakra.png");
+            background-size: 55px;
+            background-repeat: no-repeat;
+            background-position: center;            
+        }
         .thirdsegment{
-            width:250px;
-            height:55px;
             background-color:green;
-            margin:30px 200px;
-            
-            
-            
         }
-        .ashokchakra{
-        background:url(Ashoka_Chakra.png);
-        background-size: 100%;
-        }
-        
-
-      
-      
     </style>
 </head>
 <div>
-<div class="firstsegment"></div>
-    
-<div class="secondsegment"></div>
-    
-<div class="thirdsegment">
-    <div class="ashokchakra"></div>
-    
-
-    
-</div>
-
-    
+<div class="dimension firstsegment"></div>
+<div class="dimension secondsegment"></div>
+<div class="dimension thirdsegment"></div>    
 </body>
 </html>
