@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+
+    <style>
+        .flex-container {
+            /*
+            */
+            background-color: DodgerBlue;
+            
+
+            /*
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            flex-flow: row wrap;
+            justify-content: space-between;
+ justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+
+            */
+            height: 500px;
+            display: flex;
+            flex-direction: column;      
+
+        }
+
+        .header{
+            flex: 1;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .flex-content{
+            display: flex;
+            flex: 5;
+        }
+        .side-nav{
+            width: 100px;
+            background-color: blanchedalmond;
+        }
+        .body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .element{
+            background-color: aquamarine;
+            height: 50px;
+            margin: 10px;
+        }
+
+
+        .footer{
+            height: 80px;
+            background-color: brown;
+        }
+          
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="flex-container">
+        <div class="header">Header</div>
+
+
+        <div class="flex-content">
+            <div class="side-nav">Side Nav</div>
+            <div class="body">
+
+                <div class="element">1</div>
+                <div class="element">2</div>
+                <div class="element">3</div>
+                <div class="element">4</div>
+                
+            </div>
+        </div>
+
+      
+
+        <div class="footer">Footer</div>
+
+        <!-- <div class="flex-element" >12</div> -->
+    </div>
+    
+      
+    
+</body>
+</html>
