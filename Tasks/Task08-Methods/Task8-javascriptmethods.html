@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*String length
+      Used to find the length of the string.
+      Syntax
+      length=variable.length;*/
+      var string="World";
+      var length=string.length;
+      console.log(length)
+      /*String charAt()
+     String charAt() method retrieves the character at a specified index in a string.
+    Syntax
+    character= str.charAt(index)*/
+    let str="Hello"
+    let character=str.charAt(1)
+    console.log(character)
+   /* String charCodeAt()
+str.charCodeAt() method returns a Unicode character set code unit of the character present at the index in the string 
+  Syntax
+  unicode_value= str.charCodeAt(index)*/
+  let a="hi i am Raniya"
+  let unicode_value=a.charCodeAt(5)
+  console.log(unicode_value)
+  /*String at()
+The at() method returns an indexed character from a string.
+  Syntax
+  character=string.at(index)*/
+  let b="Hello world"
+  let char=b.at(1)
+  console.log(char)
+  /* String slice()
+   The slice() method extracts a part of a string and returns the extracted part
+   Syntax
+   value = string.slice(index)*/
+   let c="Anna has a red hat"
+   let value=c.slice(1,7)
+   console.log(value)
+  /* String substring()
+The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
+  Syntax
+  value=string.substring(index)*/
+  let x="Mary had a little lamp"
+  let sub=x.substring(1,7)
+  console.log(sub)
+  /*String substr()
+  The substr() method extracts a part of a string.
+  Syntax
+  value=string.substr(index)*/ 
+  let d="Alex has a blue car"
+  let substr=d.substr(1,7)
+  console.log(substr)
+  /*String toUpperCase()
+  The toUpperCase() method converts a string to uppercase letters.
+ Syntax
+ output=string.toUpperCase()*/
+ let val="rose"
+ let up=val.toUpperCase()
+ console.log(up)
+/* String toLowerCase()
+The toLowerCase() method converts a string to lowercase letters.
+Syntax
+output=string.toLowerrCase()*/
+let s ="CAT"
+let low=s.toLowerCase()
+console.log(low)
+/*String concat()
+The concat() method joins two or more strings.
+result=string1.concat(string2)*/
+let string1="Hello"
+let string2="World"
+let result=string1.concat(string2)
+console.log(result)
+/*String trim()
+Removes whitespace from both sides of a string.
+Syntax
+Value=string.trim()*/
+let string3="    Welcome    "
+let valu=string3.trim()
+console.log(valu)
+/*The trimStart() method removes whitespace from the beginning of a string.
+Syntax
+Value=string.trimstart()*/
+let strings="     Hello  world   "
+let vals=strings.trimStart()
+console.log(vals)
+/*String trimEnd()
+The trimEnd() method removes whitespace from the end of a string.
+Syntax
+Value=string.trimEnd()*/
+let stringg="     Hello world  "
+let valus=stringg.trimEnd()
+console.log(valus)
+/*String padStart()
+The padStart() method pads a string from the start.
+Syntax
+string.padStart(length, string)*/
+let string4="4"
+let values=string4.padStart(5,"0")
+console.log(values)
+/*String padEnd()
+The padStart() method pads a string from the end.
+Syntax
+string.padEnd(length, string)*/
+let string5="4"
+let v=string5.padEnd(5,"0")
+console.log(v)
+/*String repeat()
+repeat() returns a new string with a number of copies of a string
+
+Syntax
+string.repeat(count)*/
+let string6="Bag"
+let rep=string6.repeat(3)
+console.log(rep)
+/*String replace()
+
+replace() searches a string for a value, and returns a new string with the specified value(s) replaced
+Syntax
+string.replace(searchValue, newValue)*/
+let str1="Hello World World"
+let repl=str1.replace("World","Hi")
+console.log(repl)
+/*String replaceAll()
+The replaceAll() method searches a string for a value or a regular expression.
+Syntax
+string.replaceAll(searchValue, newValue)*/
+let str2="Welcome Everyone Everyone"
+let repa=str2.replaceAll("Everyone","All")
+console.log(repa)
+/*
+String split()
+split() splits a string into an array of substrings, and returns the array.
+Syntax
+string.split(separator, limit)*/
+let str3="Welcome"
+let sep=str3.split("",7)
+console.log(sep)
+
+  
+  
+
+  
+
+    </script>
+    
+</body>
+</html>

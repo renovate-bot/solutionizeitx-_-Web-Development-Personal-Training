@@ -75,7 +75,7 @@ Syntax
 string.padEndt(length, string)
 String repeat()
 repeat() returns a new string with a number of copies of a string
-Syntax
+
 Syntax
 string.repeat(count)
 String replace()
