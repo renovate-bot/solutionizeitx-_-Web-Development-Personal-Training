@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let atm_userdata = [
+        {"id":1,
+          "name":"Raniya",
+        "balance":700000,
+         "pin":1236,
+        "card_number":"768895345975"},
+        {"id":2,
+          "name":"John",
+        "balance":600000,
+         "pin":1237,
+        "card_number":"768895345569"},
+        {"id":3,
+          "name":"Ben",
+        "balance":3000000,
+         "pin":1239,
+        "card_number":"868895345569"},
+
+    ]
+    user_card = prompt("Enter your card number");
+    user_pin =  prompt("Enter your pin number");
+    is_authenticated = false;
+    user_obj_index = null;
+    for(i=0;i<atm_userdata.length;i++){
+        if(atm_userdata[i].card_number == user_card && atm_userdata[i].pin == user_pin){
+            console.log("Authentication Successful");
+            is_authenticated=true;
+            user_obj_index=i;
+            break;
+        }
+    }
+    
+    if (is_authenticated == true){
+        console.log("Welcome"+" "+atm_userdata[user_obj_index].name);
+       
+      
+        
+    
+    
+   
+    
+    
+
+    
+
+    
+    while(true){
+        let option=prompt("Enter your option:\n  1.Withdrawl\n 2.Deposit \n 3.Check balance \n 4.Exit")
+        if(option=="1"){
+            console.log("You have choosed Withdrawl");
+            Withdrawl(atm_userdata[user_obj_index])
+        }
+        if(option=="2"){
+            console.log("You have choosed Deposit");
+            Deposit(atm_userdata[user_obj_index])
+         
+        }
+        if(option=="3"){
+            console.log("You have choosed Check balance")
+        }
+        if(option=="4"){
+            console.log("You have choosed Exit");
+            break;
+        }
+    
+         
+        
+        else{
+            console.log("Invalid option");
+        }
+    }
+    }
+    else{
+        console.log("Authentication Failed")
+    }
+    function Withdrawl(user_obj){
+        let withdrawl_amount=prompt("Enter the amount you want to withdraw");
+        let current_balance=user_obj.balance;
+        if(withdrawl_amount<=current_balance){
+            console.log("Withdrawl Successful");
+            user_obj.balance=current_balance-withdrawl_amount;
+            console.log("Your balance is"+" " + user_obj.balance);
+        }
+        else{
+            console.log("Insufficient balance");
+        }
+
+    }
+    function Deposit(user_obj){
+        is_deposited=false;
+        let deposit_amount=prompt("Enter the amount you want to deposit");
+        console.log("Deposit Successful")
+        
+    
+    let current_balance=user_obj.balance;
+    if(is_deposited == true){
+        user_obj.balnce=current_balance+deposit_amount;
+        console.log("Your balance is"+" " + user_obj.balance);
+        
+    }
+    
+    else{
+        console.log("Deposit unsuccessful");
+    }
+    
+    }
+    
+    
+
+
+        
+        
+    
+
+        
+    
+        
+        
+        
+    
+</script>
+</html>
