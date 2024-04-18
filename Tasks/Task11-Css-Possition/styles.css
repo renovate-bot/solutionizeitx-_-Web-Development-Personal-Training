@@ -1,0 +1,84 @@
+.main-square{
+    height: 800px;
+    width: 95%;
+    margin: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    right: 0;
+}
+
+.blue{
+    border: 2px solid blue;
+    height: 80px;
+    width: 80px;
+}
+
+.red{
+    height: 80px;
+    border: 2px solid red;
+    width: 50%;
+    left: 25%;
+}
+
+.black{
+    top:35%;
+    border: 2px solid black;
+    height: 100px;
+    width: 30px;
+}
+.green{
+    bottom:0;
+    border: 2px solid green;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.aqua{
+    bottom:0;
+    border: 2px solid aqua;
+    height: 80px;
+    width: 80px;  
+}
+
+.black-bottom{
+    bottom: 0;
+    border: 2px solid black;
+    height: 200px;
+    width: 40%;
+    left: 30%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
