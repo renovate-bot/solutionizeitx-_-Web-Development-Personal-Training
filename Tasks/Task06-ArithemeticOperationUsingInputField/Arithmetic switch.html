@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src ="./arithmetic_operation.js">
+</script>
+    </head>
+    <style>
+        .heading{font-family: Arial, Helvetica, sans-serif;text-decoration: underline;}
+        .button1{background-color: blueviolet;
+            color:white;
+        border-radius: 60px;
+        cursor:pointer;
+        width:100px;
+        height:30px;
+        
+    }
+    .button1:hover{background-color:palevioletred;}
+    input[type=text] {
+  border: 3px solid black;
+  border-radius: 6px;
+  width: 250px;
+height:30px
+}
+    
+
+    </style>
+    
+<body>
+    
+    
+    <h1 class="heading"><center><b>Arithmetic Operators</h1></center></b>
+    <label>First Number:</label>
+    <input id="Myinput1" type="text" placeholder="Enter first number.."></input>
+    <label>Second Number:</label>
+    <input id="Myinput2" type="text" placeholder="Enter second number.."></input>
+    <label>Operation:</label>
+    <input id="Myinput3" type="text" placeholder="Enter your choice.."></input>
+    <button onclick="operation()" class="button1">Calculate</button>
+    
+    
+    <p id ="output"></p>
+
+    
+    
+</body>
+</html>

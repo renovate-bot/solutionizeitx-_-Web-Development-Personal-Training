@@ -42,91 +42,65 @@
     
     if (is_authenticated == true){
         console.log("Welcome"+" "+atm_userdata[user_obj_index].name);
-       
-      
-        
-    
-    
-   
-    
-    
-
-    
-
-    
-    while(true){
+        while(true){
         let option=prompt("Enter your option:\n  1.Withdrawl\n 2.Deposit \n 3.Check balance \n 4.Exit")
         if(option=="1"){
-            console.log("You have choosed Withdrawl");
-            Withdrawl(atm_userdata[user_obj_index])
+            console.log("You have choosed Withdrawl")
+            Withdrawl(atm_userdata[user_obj_index]);
         }
-        if(option=="2"){
-            console.log("You have choosed Deposit");
-            Deposit(atm_userdata[user_obj_index])
+        else if(option=="2"){
+            console.log("You have choosed Deposit")
+            Deposit(atm_userdata[user_obj_index]);
          
         }
-        if(option=="3"){
+        else if(option=="3"){
             console.log("You have choosed Check balance")
+            Balance(atm_userdata[user_obj_index]);
         }
-        if(option=="4"){
-            console.log("You have choosed Exit");
+        else if(option=="4"){
+            console.log("You have choosed Exit")
             break;
         }
-    
-         
-        
-        else{
-            console.log("Invalid option");
+        else {
+            console.log("Invalid option")
         }
     }
-    }
-    else{
-        console.log("Authentication Failed")
-    }
+}
+else {
+    console.log("Authentication failed")
+}
     function Withdrawl(user_obj){
         let withdrawl_amount=prompt("Enter the amount you want to withdraw");
         let current_balance=user_obj.balance;
         if(withdrawl_amount<=current_balance){
-            console.log("Withdrawl Successful");
+            console.log("Withdrawl Successful")
             user_obj.balance=current_balance-withdrawl_amount;
-            console.log("Your balance is"+" " + user_obj.balance);
-        }
+            console.log("Your updated balance is"+" "+user_obj.balance)
+      }
         else{
             console.log("Insufficient balance");
         }
 
     }
     function Deposit(user_obj){
-        is_deposited=false;
-        let deposit_amount=prompt("Enter the amount you want to deposit");
-        console.log("Deposit Successful")
+       
+        let deposit_amount=parseFloat(prompt("Enter the amount you want to deposit"));
+        let current_balance=user_obj.balance;
         
-    
-    let current_balance=user_obj.balance;
-    if(is_deposited == true){
-        user_obj.balnce=current_balance+deposit_amount;
-        console.log("Your balance is"+" " + user_obj.balance);
-        
-    }
+        if(deposit_amount>0){
+       
+        console.log("Deposit successful");
+        user_obj.balance=current_balance+deposit_amount;
+        console.log("Your updated balance is"+" "+user_obj.balance)
+        }
     
     else{
         console.log("Deposit unsuccessful");
     }
     
     }
-    
-    
-
-
-        
-        
-    
-
-        
-    
-        
-        
-        
-    
-</script>
-</html>
+    function Balance(user_obj){
+        console.log("Your current balance is"+" "+user_obj.balance)
+    }
+    </script>
+    </html>

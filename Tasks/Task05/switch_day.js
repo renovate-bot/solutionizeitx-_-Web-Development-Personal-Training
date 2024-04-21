@@ -1,5 +1,5 @@
 console.log("Program started")
-function day(){
+function week(){
    var result;
    day= document.getElementById("Myinput").value;
    
