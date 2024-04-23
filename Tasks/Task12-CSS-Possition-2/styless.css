@@ -1,0 +1,48 @@
+.main-square{
+    height: 620px;
+    width: 68%;
+    margin: 10px;
+    border: 3px solid black;
+    position: relative;
+}
+.top{
+    top:5px;
+    left:10px;
+    height:270px;
+    width:520px;
+}
+.absolute{
+    position:absolute;
+}
+.green{
+    
+    border:3px solid green;
+}
+.circle{
+    height: 60px;
+    width: 60px;
+
+    border-radius: 100%;
+    
+    border:3px solid red;
+}
+.a{
+    left:455px;
+    top:200px;
+}
+.middle{
+    width:1003px;
+    height:70px;
+    left:10px;
+    top:290px;
+}
+.bottom{
+    width:920px;
+    height:230px;
+    top:375px;
+    left:10px
+}
+.b{
+    top:547px;
+    right:17px;
+}
