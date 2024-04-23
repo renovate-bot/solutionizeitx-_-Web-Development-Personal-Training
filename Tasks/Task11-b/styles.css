@@ -1,5 +1,5 @@
-.main-square{height:680px;
-width:98%;
+.main-square{height:413px;
+width:67%;
 margin:17px;
 border:4px solid;
 position:relative;
@@ -9,33 +9,68 @@ position:relative;
     position:absolute;
 }
 
-.right{right:0;}
-.red {
-    
-    border:3px solid red;
-    height: 280px;
-    width:150px;
-}
-.blue{
-    height:100px;
-    width:100px;
-    border:3px solid blue;
-}
 .top{
-    margin-left:300px;
-    margin-top: 179px;
+    top:0;
 }
-.middle{
-    margin-left:600px;
+.left{
+    left:0
 }
-.bottom a {
-    margin-top: 400px;
+.right{
+    right:0;
 }
-.bottom b{
-    margin-right:700px;
+.red{
+    width:150px;
+    height:250px;
+    border:3px solid red
 }
 .green{
     width:500px;
-    height:50px;
+    height:80px;
     border:3px solid green;
+    left:155px;
+
 }
+.center{
+    top:25px;
+    left:470px;
+}
+.bottom{
+    bottom:5px;
+}
+
+.blue {
+   
+    
+    width:100px;
+    height:90px;
+    border:3px solid blue
+}
+.a{
+    right:7px;
+   }
+.b{
+    right:150px;
+}
+.c{
+    top:160px;
+    left:170px;
+}
+.d{
+    top:5px;
+    left:680px;
+}
+.e{
+    left:120px;
+    top:280px;
+
+}
+.f{
+    top:295px;
+    left:68px;
+}
+.g{
+    left:13px;
+    top:315px;
+}
+
+
