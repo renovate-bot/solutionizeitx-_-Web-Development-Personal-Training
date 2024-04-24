@@ -1,0 +1,163 @@
+.main-square{
+    height: 590px;
+    width: 50%;
+    margin: 10px;
+    border: 3px solid black;
+    position: relative;
+    background-color:darkblue;
+   
+}
+.absolute{
+    position:absolute;
+}
+.atm{
+    color:white;
+    font-family:fantasy;
+    left:30px;
+    font-weight: lighter;
+    font-size:25px;
+    
+    
+
+
+}
+.card{
+    color:oldlace;
+    font-size:small;
+    right:30px;
+    top:35px;
+
+}
+.welcome{
+    top:120px;
+    left:30px;
+    color:lightskyblue;
+    font-size: small;
+}
+.name{
+    top:140px;
+    left:30px;
+    color:white;
+    font-size: large;
+}
+.acc{
+    top:180px;
+    left:30px;
+    color:lightskyblue;
+    font-size: small;
+
+}
+.amount{
+    top:200px;
+    left:30px;
+    color:white;
+    font-size:x-large
+}
+.save{
+    top:240px;
+    left:30px;
+    color:lightskyblue;
+    font-size: small;
+}
+.savings{
+    top:260px;
+    left:30px;
+    color:white;
+    font-size:x-large
+
+}
+.button1{
+    width:220px;
+    height:70px;
+    background-color:#00BFFF;
+    color:white;
+    font-size:large;
+    padding: auto;
+    
+    left:250px;
+    top:120px;
+    cursor: pointer;
+    
+}
+.button2{
+    width:220px;
+    height:70px;
+    background-color:#00BFFF;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:480px;
+    top:120px;
+    cursor: pointer;
+
+}
+.button3{
+    width:220px;
+    height:70px;
+    background-color:#00BFFF;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:250px;
+    top:200px;
+    cursor: pointer;
+}
+.button4{
+    width:220px;
+    height:70px;
+    background-color:#00BFFF;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:480px;
+    top:200px;
+    cursor: pointer;
+
+}
+.button5{
+    width:220px;
+    height:70px;
+    background-color:#00BFFF;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:250px;
+    top:280px;
+    font-weight: normal;
+    font-family:Verdana;
+    cursor: pointer;
+
+}
+.button6{
+    width:220px;
+    height:70px;
+    background-color:#6495ED;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:480px;
+    top:280px;
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    
+
+}
+
+    .btn{
+        display: flex;
+        justify-content: space-between;
+        width:450px;
+    height:50px;
+    background-color:#DC143C;
+    color:white;
+    font-size:large;
+    padding: auto;
+    left:250px;
+    top:500px;
+    }
+    .bi{
+        top:-4px;
+        right:-20px;
+    }
+   
