@@ -5,143 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
     <script>
         /*String length
       Used to find the length of the string.
       Syntax
       length=variable.length;*/
+      function length(){
       var string="World";
       var length=string.length;
-      console.log(length)
+      console.log("length of string world is:",length)
+    }
       /*String charAt()
      String charAt() method retrieves the character at a specified index in a string.
     Syntax
     character= str.charAt(index)*/
+    function character(){
     let str="Hello"
     let character=str.charAt(1)
-    console.log(character)
+    console.log("character at index 1 of string Hello is:",character)
+    }
    /* String charCodeAt()
 str.charCodeAt() method returns a Unicode character set code unit of the character present at the index in the string 
   Syntax
   unicode_value= str.charCodeAt(index)*/
-  let a="hi i am Raniya"
+  function unicode_value(){
+  let a="Raniya"
   let unicode_value=a.charCodeAt(5)
-  console.log(unicode_value)
+  console.log("unicode_value of string  Raniya at index 5 is:",unicode_value)
+  }
   /*String at()
 The at() method returns an indexed character from a string.
   Syntax
   character=string.at(index)*/
+  function char(){
   let b="Hello world"
   let char=b.at(1)
-  console.log(char)
+  console.log("char of string Hello world at index 1 is:",char)
+  }
   /* String slice()
    The slice() method extracts a part of a string and returns the extracted part
    Syntax
    value = string.slice(index)*/
+   function sliced(){
    let c="Anna has a red hat"
    let value=c.slice(1,7)
-   console.log(value)
+   console.log("slicing between 1 and 7 indices of Anna has a red hat is:",value)
+   }
   /* String substring()
 The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
   Syntax
   value=string.substring(index)*/
+  function subs(){
   let x="Mary had a little lamp"
   let sub=x.substring(1,7)
-  console.log(sub)
+  console.log("substring between indices 1&7 is:",sub)
+  }
   /*String substr()
   The substr() method extracts a part of a string.
   Syntax
   value=string.substr(index)*/ 
+  function subst(){
   let d="Alex has a blue car"
   let substr=d.substr(1,7)
-  console.log(substr)
+  console.log("substr between indices 1&7 is:",substr)
+  }
   /*String toUpperCase()
   The toUpperCase() method converts a string to uppercase letters.
  Syntax
  output=string.toUpperCase()*/
+ function upper(){
  let val="rose"
  let up=val.toUpperCase()
- console.log(up)
+ console.log("Uppercase of string is:",up)
+ }
 /* String toLowerCase()
 The toLowerCase() method converts a string to lowercase letters.
 Syntax
 output=string.toLowerrCase()*/
+function lower(){
 let s ="CAT"
 let low=s.toLowerCase()
-console.log(low)
+console.log("Lowercase of string is:",low)
+}
 /*String concat()
 The concat() method joins two or more strings.
 result=string1.concat(string2)*/
+function conc(){
 let string1="Hello"
 let string2="World"
 let result=string1.concat(string2)
-console.log(result)
+console.log("concatenated string is:",result)
+}
 /*String trim()
 Removes whitespace from both sides of a string.
 Syntax
 Value=string.trim()*/
+function trimmed(){
 let string3="    Welcome    "
 let valu=string3.trim()
-console.log(valu)
+console.log("trimmed value  is:",valu)
+}
 /*The trimStart() method removes whitespace from the beginning of a string.
 Syntax
 Value=string.trimstart()*/
+function trimmedstart(){
 let strings="     Hello  world   "
 let vals=strings.trimStart()
-console.log(vals)
+console.log("value after trimming beginning is:",vals)
+}
 /*String trimEnd()
 The trimEnd() method removes whitespace from the end of a string.
 Syntax
 Value=string.trimEnd()*/
+function trimmedend(){
 let stringg="     Hello world  "
 let valus=stringg.trimEnd()
-console.log(valus)
+console.log("value after trimming end is:",
+valus)
+}
 /*String padStart()
 The padStart() method pads a string from the start.
 Syntax
 string.padStart(length, string)*/
+function padstr(){
 let string4="4"
 let values=string4.padStart(5,"0")
-console.log(values)
+console.log("the padded value is:",values)
+}
 /*String padEnd()
 The padStart() method pads a string from the end.
 Syntax
 string.padEnd(length, string)*/
+function padEn(){
 let string5="4"
 let v=string5.padEnd(5,"0")
-console.log(v)
+console.log("the padded value is:",v)
+}
 /*String repeat()
 repeat() returns a new string with a number of copies of a string
 
 Syntax
 string.repeat(count)*/
+function reps(){
 let string6="Bag"
 let rep=string6.repeat(3)
 console.log(rep)
+}
 /*String replace()
 
 replace() searches a string for a value, and returns a new string with the specified value(s) replaced
 Syntax
 string.replace(searchValue, newValue)*/
+function replacing(){
 let str1="Hello World World"
 let repl=str1.replace("World","Hi")
-console.log(repl)
+console.log("the new phrase after replacement is:",repl)
+}
 /*String replaceAll()
 The replaceAll() method searches a string for a value or a regular expression.
 Syntax
 string.replaceAll(searchValue, newValue)*/
+function replacingall(){
 let str2="Welcome Everyone Everyone"
 let repa=str2.replaceAll("Everyone","All")
-console.log(repa)
+console.log("the new phrase after replacement is:",repa)
+}
 /*
 String split()
 split() splits a string into an array of substrings, and returns the array.
 Syntax
 string.split(separator, limit)*/
+function splits(){
 let str3="Welcome"
 let sep=str3.split("",7)
-console.log(sep)
+console.log("the new phrase after split is:",sep)
+}
 
   
   
@@ -149,6 +188,26 @@ console.log(sep)
   
 
     </script>
+    <body>
+      <button onclick="length()">length</button>
+      <button onclick="character()">character</button>
+      <button onclick="unicode_value()">unicode_value</button>
+      <button onclick="sliced()">slice</button>
+      <button onclick="subs()">substring</button>
+      <button onclick="subst()">substr</button>
+      <button onclick="upper()">uppercase</button>
+      <button onclick="lower()">lowercase</button>
+      <button onclick="conc()">concatenate</button>
+      <button onclick="trimmed()">trim</button>
+      <button onclick="trimmedstart()">trimstart</button>
+      <button onclick="trimmedend()">trimend</button>
+      <button onclick="padstr()">padstart</button>
+      <button onclick="padEn()">padend</button>
+      <button onclick="reps()">repeat</button>
+      <button onclick="replacing()">replace</button>
+      <button onclick="replacingall()">replaceall</button>
+      <button onclick="splits()">split</button>
+    </body>
     
-</body>
+
 </html>
