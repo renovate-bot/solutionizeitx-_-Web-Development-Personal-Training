@@ -1,0 +1,79 @@
+.flex-container {
+    background-color: #002f6c;
+    height: 590px;
+    width: 50%;
+    padding: 20px;
+  
+    color:white;
+}
+.atm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-heading {
+    font-size: 24px;
+    font-family:fantasy;
+    font-size: 30px;
+    
+}
+.card-return {
+    font-size: 14px;
+}
+.account-info {
+    margin-top: 80px;
+ 
+    
+    
+}
+.side-heading-1{
+    font-size: 10px;
+    color:lightskyblue
+}
+.name{
+    font-size: large;
+    font-weight: bolder;
+}
+.account-number{
+    font-size: 10px;
+    color:lightskyblue
+}
+.savings-1{
+    font-size:x-large;
+    font-weight: bolder;
+}
+.side-heading-2{
+    font-size: 10px;
+    color:lightskyblue
+}
+.savings-2{
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+
+.menu button {
+    width:220px;
+height:70px;
+background-color:#00BFFF;
+color:white;
+font-size:large;
+cursor:pointer;
+
+}
+
+
+.button-6{ opacity: 0.5;}
+
+.quick-cash {
+    display: flex;
+    justify-content: space-between;
+    
+    width:450px;
+height:50px;
+background-color:#DC143C;
+color:white;
+font-size:large;
+margin-top: 100px;
+
+}
