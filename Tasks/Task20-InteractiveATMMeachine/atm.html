@@ -22,17 +22,17 @@
             <div class="left-item">
 
                 <label class="main-heading">Welcome</label>
-                <label class="sub-heading">Steph Curry</label>
+                <label id="customer_name"></label>
             </div>
             <div class="left-item">
 
-                <label class="main-heading">Account #1</label>
-                <label class="sub-heading">$2.380</label>
+                <label class="main-heading">Total Balance</label>
+                <label id="check_balance"></label>
             </div>
             <div class="left-item">
+              
 
-                <label class="main-heading">Savings #2</label>
-                <label class="sub-heading">$795</label>
+              
             </div>
             <div class="left-item">
 
@@ -40,25 +40,26 @@
             </div>
         </div>
         <div class="content-right">
-           <button>Get Cash</button>
-           <button>Deposit</button>
-           <button >Payments</button>
-           <button >Credit Card</button>
-           <button>Account Settings</button>
-           <button class="sixth-button">Other</button>
+           <button onclick="setName()">Login</button>
+    
+           <button onclick="withdraw()">Withdraw</button>
 
+           <button onclick="deposit()">Deposit</button>
+           <button onclick="balance()">Check Balance</button>
+           <button >Account Settings</button>
+           <button class="sixth-button">Other</button>
+           
         </div>
         </div>
-        <div class="footer">
-        <span style="font-family: fantasy;font-size: larger">
-            $70
-        </span>
-        <span style="font-size:19px;opacity:0.6">
-            Quick Cash</span>  <span style="font-size:13px;opacity:0.6"> <i class="fas fa-chevron-right"></i>
-        </span>
+        <button onclick="logout()"class="seventh-button">
+            Logout
+      
             
+        </button>
         </div>
-        </div>
+         
+   
+        <script src ="./atm.js"></script>
         
        
 </body>

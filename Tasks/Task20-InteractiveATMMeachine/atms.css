@@ -100,7 +100,7 @@
     cursor: not-allowed;
     
 }
-.footer{
+.seventh-button{
     display:flex;
     flex:1;
     
@@ -115,6 +115,8 @@ height:50px;
 background-color:#DC143C;
 margin-left: 300px;
 cursor:pointer;
+color:white;
+font-size:18px;
 
 
 
@@ -123,9 +125,5 @@ cursor:pointer;
     
    
 }
-.footer:hover{
-    
-  transform: scale(0.9); 
-  background-color:#dd254a;
-}
+
 
