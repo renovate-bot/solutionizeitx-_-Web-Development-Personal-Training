@@ -1,0 +1,11 @@
+Snake And Ladder
+
+Conditions:
+1. To start you need get value 1 from dice
+2. To end the game you need exact remaning end possition 
+3. If you reached SH[N] then you are swallowed by a snake, so you have to update your posstion to ST[N]
+4. If you reached LS[N] then you are ready to climb ladder, so you have to update your posstion to LE[N]
+5. Once you have reached final possition then a won message needs to show up
+6. Currently this game is for a single player.
+
+Note: May be in future it will be multiplayer, so code it well
