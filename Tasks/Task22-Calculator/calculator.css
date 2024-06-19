@@ -1,0 +1,33 @@
+.grid-container{
+    display:grid;
+    padding-top:100px;
+    
+    width:480px;
+    height:500px;
+}
+.trignometric >button{
+    background-color: black;
+    width:40px;
+    height:40px;
+    border-radius:15px;
+    color:white;
+    font-weight: bolder;
+}
+.numbers >button{
+    background-color: red;
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    color:white;
+    font-weight:bolder;
+    display:grid;
+    grid-template-columns::repeat(4,1f)
+}
+
+    
+    
+.numbers{
+    grid-template-columns:repeat(4,1f)
+
+}
+    
