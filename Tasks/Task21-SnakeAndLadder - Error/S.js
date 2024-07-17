@@ -1,15 +1,6 @@
 console.log("Program Started")
 let player_position=0;
 let boardSize=25;
-<<<<<<< HEAD
-let snakes={7:3,14:4,24:1};
-let ladders={5:12,15:21,13:23};
-function rollDice(){
-    
-    console.log("prev player position:",player_position)
-    reset_color(player_position)
-    var dicevalue = Math.floor(Math.random() * 6) + 1;
-=======
 let snakes={
     //head:tail
     9:3,
@@ -28,7 +19,6 @@ function rollDice(){
 
 
     var dicevalue = Math.floor(Math.random() * 6) + 1; // explain well
->>>>>>> ce406a0f5a268ebb560bbae4b1adfe13a90abead
     document.getElementById("dicevalue").innerHTML = "Dice Value:" + dicevalue;
     if (player_position == 0 && dicevalue !== 1) {
         document.getElementById("game-status").innerText = "Game Status: You need to roll a 1 to start!";
@@ -46,12 +36,8 @@ function rollDice(){
 
     
     player_position = new_position;
-<<<<<<< HEAD
-    console.log("current player position:",player_position)
-=======
     console.log("Current player_position ",player_position)
 
->>>>>>> ce406a0f5a268ebb560bbae4b1adfe13a90abead
 
     if (snakes[player_position]) {
         player_position = snakes[player_position];
@@ -94,24 +80,6 @@ function reset_color(prev_possition){
     document.getElementById(player_position).style.backgroundColor='red';
 }
 
-<<<<<<< HEAD
-
-function reset_color(prev_position){
-    console.log("Reset color:",prev_position)
-    if(prev_position !==0){
-        if(prev_position%2==0){
-            document.getElementById(prev_position).style.backgroundColor='yellow';
-        }
-        else{
-            document.getElementById(prev_position).style.backgroundColor='lightskyblue';
-        }
-    }
-    else{
-        console.log("Game not started yet")
-    }
-}
-=======
 // lightskyblue
 
 // yellow
->>>>>>> ce406a0f5a268ebb560bbae4b1adfe13a90abead
