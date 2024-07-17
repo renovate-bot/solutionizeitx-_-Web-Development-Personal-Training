@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="calculator.css" rel="stylesheet" />
 </head>
+
 <body>
-   
-        
-        <div class="grid-container">
-            <input id= "Myinput" readonly></input>
-            <div class="symbols">
-                <button onclick="fullClear()">C</button>
-                <button onclick="deleteLast()">DEL</button>
-                <button onclick="appendCharacter('%')">%</button>
-                <button onclick="appendCharacter('/')">÷</button>
-                <button onclick="appendCharacter('-')">-</button>
-                <button onclick="appendCharacter('+')">+</button>
-                <button onclick="appendCharacter('*')">*</button>
-              
-                </div>
-                <div class="numbers">
-                    <button onclick="appendCharacter('7')">7</button>
-                    <button onclick="appendCharacter('8')">8</button>
-                    <button onclick="appendCharacter('9')">9</button>
-                <button onclick="appendCharacter('4')">4</button>
-                <button onclick="appendCharacter('5')">5</button>
-                <button onclick="appendCharacter('6')">6</button>
-              
-                <button onclick="appendCharacter('1')">1</button>
-                <button onclick="appendCharacter('2')">2</button>
-                <button onclick="appendCharacter('3')">3</button>
-               
-                <button onclick="appendCharacter('0')">0</button>
-                <button onclick="appendCharacter('.')">.</button>
-            </div>
-               
-                <div class="other_operations">
+
+
+    <div class="grid-container">
+        <input id="Myinput" readonly/>
+        <div class="symbols">
+            <button onclick="fullClear()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendCharacter('%')">%</button>
+            <button onclick="appendCharacter('/')">÷</button>
+            <button onclick="appendCharacter('-')">-</button>
+            <button onclick="appendCharacter('+')">+</button>
+            <button onclick="appendCharacter('*')">*</button>
+        </div>
+        <div class="numbers">
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+        </div>
+        <div class="other_operations">
             <button onclick="operator('sin')">sin</button>
-            <button  onclick="operator('cos')">cos</button>
+            <button onclick="operator('cos')">cos</button>
             <button onclick="operator('tan')">tan</button>
             <button onclick="operator('sin_inverse')">sin⁻¹</button>
             <button onclick="operator('cos_inverse')">cos⁻¹</button>
             <button onclick="operator('tan_inverse')">tan⁻¹</button>
-           
-            
+
+
             <button onclick="operator('log')">log</button>
             <button onclick="operator('exp')">exp</button>
             <button onclick="operator('sqrt')">sqrt</button>
-            
-            
-          
+
+
+
             <button onclick="operator('reciprocal')">reciprocal</button>
-           
-             
-    
 
 
-            </div>
-            <div class="calculations">
-                <button onclick="calculate()">=</button>
-            </div>
-       <script src="calculator.js"></script>
-          
-           
+
 
 
         </div>
-    
+        <div class="calculations">
+            <button onclick="calculate()">=</button>
+        </div>
+        <script src="calculator.js"></script>
+
+
+
+
+    </div>
+
 </body>
+
 </html>
