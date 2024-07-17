@@ -1,34 +1,29 @@
-function fullClear() {
-    document.getElementById('Myinput').value='';
-       
+function clearDisplay() {
+    document.getElementById('display').value = '';
 }
+
 function deleteLast() {
-    const display = document.getElementById('Myinput');
+    const display = document.getElementById('display');
     display.value = display.value.slice(0, -1);
 }
-function appendCharacter(character) {
-    document.getElementById('Myinput').value += character;
-}
-function calculate() {
-    
-    const display = document.getElementById('Myinput');
-    
-    if (isNaN(display.value)) {
-        display.value = 'Error';
-        return;
-    }
-    else{
-     display.value=eval(result);
-    }
 
-    
+function appendCharacter(character) {
+    document.getElementById('display').value += character;
+}
+
+function calculate() {
+    const display = document.getElementById('display');
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = 'Error';
     }
-    
-   
-function operator(operation) {
-    const display = document.getElementById('Myinput');
+}
+
+function additionalOperation(operation) {
+    const display = document.getElementById('display');
     const value = parseFloat(display.value);
-    if (isNaN(display.value)) {
+    if (isNaN(value)) {
         display.value = 'Error';
         return;
     }
@@ -37,7 +32,7 @@ function operator(operation) {
             display.value = Math.sqrt(value);
             break;
         case 'log':
-            display.value = Math.log(value);
+            display.value = Math.log10(value);
             break;
         case 'sin':
             display.value = Math.sin(value);
@@ -48,24 +43,14 @@ function operator(operation) {
         case 'tan':
             display.value = Math.tan(value);
             break;
-         case 'sin_inverse':
-         display.value = Math.asin(value);
-            break;
-        case 'cos_inverse':
-        display.value = Math.acos(value);
-            break;
-        case 'tan_inverse':
-        display.value = Math.atan(value);
-            break;
         case 'exp':
             display.value = Math.exp(value);
             break;
         case 'reciprocal':
             display.value = 1 / value;
             break;
-        
         default:
             display.value = 'Error';
             break;
     }
-} 
+}

@@ -1,13 +1,13 @@
 console.log("program started")
 
-var num1 = parseFloat( "10.5")
-var num2 = parseFloat( 5)
+var num1 = 10.5
+var num2 =  5
 
 console.log(typeof num1)
 
 // function, function name ( args or paramerts) then function body
-function addition(no1, no2){
-    console.log("Addition = ",no1 + no2)
+function addition(num1, num2){
+    console.log("Addition = ",num1 + num2)
 }
 
 function substraction(no1, no2){

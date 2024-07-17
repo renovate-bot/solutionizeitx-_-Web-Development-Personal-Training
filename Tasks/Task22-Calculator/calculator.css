@@ -1,33 +1,137 @@
-.grid-container{
-    display:grid;
-    padding-top:100px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     
-    width:480px;
-    height:500px;
+    
 }
-.trignometric >button{
+
+    
+
+.grid-container {
+    display: grid;
+    
     background-color: black;
-    width:40px;
-    height:40px;
-    border-radius:15px;
-    color:white;
+    border-radius: 20px;
+   padding: 10px;
+    
+    width: 450px;
+    height:600px;
+    flex-direction: column;
+    
+    
+}
+#Myinput{
+    height:25px;
+    border-radius: 12px;
+    border:3px solid black;
+}
+.other_operations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:4px;
+  margin-top: 20px;
+  width: 90%;
+    
+}
+ 
+
+.other_operations button {
+    
+    background-color:darkred;
+    color: white;
+    border-radius: 15px;
+    width: 80px;
+    height:30px;
     font-weight: bolder;
+    border:3px solid white;
+    
 }
-.numbers >button{
-    background-color: red;
-    width:70px;
-    height:70px;
-    border-radius:20px;
-    color:white;
-    font-weight:bolder;
-    display:grid;
-    grid-template-columns::repeat(4,1f)
+.other_operations button:hover{
+    background-color: rgb(183, 7, 7);
+    cursor: pointer;
 }
+.calculations button {
+    
+    background-color:dimgrey;
+    color: white;
+    border-radius: 15px;
+    width: 170px;
+    height:32px;
+    font-weight:900;
+    border: 3px solid white;
+    
+}
+.calculations{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    
+}
+.calculations button:hover {
+    background-color:rgb(131, 131, 131);
+    cursor:pointer}
 
     
-    
-.numbers{
-    grid-template-columns:repeat(4,1f)
 
+
+
+
+ .symbols button{
+    background-color:mistyrose;
+    color: black;
+    border-radius: 15px;
+   width: 38px;
+    font-weight: bolder;
+    border:3px solid white;
+    font-weight: bolder;
+    border:3px solid white;
+ 
+
+}
+.symbols{
+       
+   display: grid;
+   gap: 6px;
+   margin-left: 410px;
+   margin-top: 30px;
+   
+}
+.symbols button:hover{
+    background-color: rgb(178, 122, 116);
+    cursor:pointer;
+}
+    
+
+ 
+ .numbers button{
+    background-color:darkslateblue;
+    color: white;
+    border-radius: 15px;
+   
+    font-weight: bolder;
+    border:3px solid white;
+    
+    width: 80px;
+    height:30px;
+    
+}
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    width: 90%;
+    
+    gap: 5px;
+    margin-bottom: 30px;
+    
+    gap:5px;
+
+}
+.numbers button:hover{
+    background-color: rgb(99, 93, 136);
+    cursor:pointer;
 }
     

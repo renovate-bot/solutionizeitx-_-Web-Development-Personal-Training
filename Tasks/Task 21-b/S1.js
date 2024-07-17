@@ -1,12 +1,14 @@
 console.log("Program Started")
 let player_position=0;
-let boardSize=25;
+let boardSize=0;
+
 let snakes={7:3,14:4,24:1};
 let ladders={5:12,15:21,13:23};
 function rollDice(){
     
     console.log("prev player position:",player_position)
     reset_color(player_position)
+    
     var dicevalue = Math.floor(Math.random() * 6) + 1;
     document.getElementById("dicevalue").innerHTML = "Dice Value:" + dicevalue;
     if (player_position == 0 && dicevalue !== 1) {
@@ -55,3 +57,201 @@ function reset_color(prev_position){
         console.log("Game not started yet")
     }
 }
+
+    function board() {
+         boardSize = parseInt(document.getElementById('size').value);
+        if (isNaN(boardSize) || boardSize <= 0) {
+            alert("Please enter a valid board size.");
+            return;
+        }
+        
+        player_position=0;
+        
+        document.getElementById('boardContainer').innerHTML = '';
+    
+        for (let i = 1; i <= boardSize; i++) {
+            let cls_name;
+            if (i % 2 == 0) {
+                cls_name = "second-square";
+            } else {
+                cls_name = "first-square";
+            }
+            let ele = '<div id="' + i + '" class="' + cls_name + '">' + i + '</div>';
+            document.getElementById('boardContainer').innerHTML += ele;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

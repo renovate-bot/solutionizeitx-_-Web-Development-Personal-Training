@@ -11,42 +11,58 @@
         
         <div class="grid-container">
             <input id= "Myinput" readonly></input>
-            <div class="trignometric">
-            <button>sin</button>
-            <button>cos</button>
-            <button>tan</button>
-            <button>sin⁻¹</button>
-            <button>cos⁻¹</button>
-            <button>tan⁻¹</button>
-           
-            
-            <button>log</button>
-            <button>exp</button>
-            <button>√</button>
-            <button>!</button>
-            <button>(</button>
-            <button>)</button>
-            <button>π</button>
-            <button>ln</button>
+            <div class="symbols">
+                <button onclick="fullClear()">C</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendCharacter('%')">%</button>
+                <button onclick="appendCharacter('/')">÷</button>
+                <button onclick="appendCharacter('-')">-</button>
+                <button onclick="appendCharacter('+')">+</button>
+                <button onclick="appendCharacter('*')">*</button>
+              
+                </div>
+                <div class="numbers">
+                    <button onclick="appendCharacter('7')">7</button>
+                    <button onclick="appendCharacter('8')">8</button>
+                    <button onclick="appendCharacter('9')">9</button>
+                <button onclick="appendCharacter('4')">4</button>
+                <button onclick="appendCharacter('5')">5</button>
+                <button onclick="appendCharacter('6')">6</button>
+              
+                <button onclick="appendCharacter('1')">1</button>
+                <button onclick="appendCharacter('2')">2</button>
+                <button onclick="appendCharacter('3')">3</button>
+               
+                <button onclick="appendCharacter('0')">0</button>
+                <button onclick="appendCharacter('.')">.</button>
             </div>
-        <div class="numbers">
-            
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>4</button>
-            <button>5</button>
+               
+                <div class="other_operations">
+            <button onclick="operator('sin')">sin</button>
+            <button  onclick="operator('cos')">cos</button>
+            <button onclick="operator('tan')">tan</button>
+            <button onclick="operator('sin_inverse')">sin⁻¹</button>
+            <button onclick="operator('cos_inverse')">cos⁻¹</button>
+            <button onclick="operator('tan_inverse')">tan⁻¹</button>
            
             
-            <button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
-            <button>.</button>
-
-        </div>
+            <button onclick="operator('log')">log</button>
+            <button onclick="operator('exp')">exp</button>
+            <button onclick="operator('sqrt')">sqrt</button>
+            
+            
           
+            <button onclick="operator('reciprocal')">reciprocal</button>
+           
+             
+    
+
+
+            </div>
+            <div class="calculations">
+                <button onclick="calculate()">=</button>
+            </div>
+       <script src="calculator.js"></script>
           
            
 

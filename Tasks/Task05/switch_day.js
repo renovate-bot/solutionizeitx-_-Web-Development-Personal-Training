@@ -11,7 +11,9 @@ function week(){
     case "Thursday":
     case "Friday":
         result="Today is not weekend";
+        
     break;
+    
     case "Saturday":
     case "Sunday":
         result="Today is a weekend";
