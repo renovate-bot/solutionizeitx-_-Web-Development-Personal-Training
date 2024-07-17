@@ -18,16 +18,12 @@ function calculate() {
     
     const display = document.getElementById('Myinput');
     
-    if (isNaN(display.value)) {
-        display.value = 'Error';
-        return;
-    }
-    else{
-     display.value=eval(result);
+    
+     display.value=eval(display.value);
     }
 
     
-    }
+    
     
    
 function operator(operation) {
