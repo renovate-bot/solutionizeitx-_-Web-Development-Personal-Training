@@ -82,11 +82,10 @@
     cursor:pointer;
 }
 .content-right > button:hover{
-    
     transform: scale(0.9); 
     background-color:#32c5f6;
 
-}
+}     
 
     
    
