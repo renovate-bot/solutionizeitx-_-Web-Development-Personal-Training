@@ -2,7 +2,7 @@ console.log("Program Started")
 let player_position=0;
 let boardSize=25;
 let snakes={
-    //head:tail
+    
     9:3,
     14:4,
     24:1
@@ -63,7 +63,7 @@ function rollDice(){
 
 
 function reset_color(prev_possition){
-    // Resetting old coloumn
+    
     console.log("Reset color ", prev_possition)
     if(prev_possition !==0){
 
@@ -77,9 +77,6 @@ function reset_color(prev_possition){
     else {
         console.log("Game not started yet!")
     }
-    document.getElementById(player_position).style.backgroundColor='red';
+   
 }
 
-// lightskyblue
-
-// yellow
