@@ -1,0 +1,35 @@
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px );
+    
+    margin-bottom: 20px;
+  
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    
+    border: 2px solid #000;
+   
+    
+}
+
+
+
+button {
+    padding:10px;
+    border-radius:10px;
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+
+    
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(172, 87, 251)
+}

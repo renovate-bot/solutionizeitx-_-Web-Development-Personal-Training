@@ -1,0 +1,65 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="style/calculator-2.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator-screen">
+            <input id="Myinput" readonly>
+        </div>
+        <div class="calculator-keys">
+            <div class="symbols">
+
+                <button onclick="fullClear()">C</button>
+                <button onclick="operators('√')">√ </button>
+                <button onclick=" appendCharacter('%')">%</button>
+                <div class="operator">
+                    <button onclick="appendCharacter('/')">/</button>
+                </div>
+
+
+
+            </div>
+
+            <div class="number">
+                <button onclick="appendCharacter('7') ">7</button>
+                <button onclick="appendCharacter('8')">8</button>
+                <button onclick="appendCharacter('9')">9</button>
+                <div class="operator">
+                    <button onclick=" appendCharacter('*')">*</button>
+                </div>
+            </div>
+
+
+            <div class="numbers">
+                <button onclick="appendCharacter('4')">4</button>
+                <button onclick="appendCharacter('5')">5</button>
+                <button onclick="appendCharacter('6')">6</button>
+                <div class="operator">
+                    <button onclick=" appendCharacter('-')">-</button>
+                </div>
+            </div>
+            <div class="digits">
+
+                <button onclick="appendCharacter('1')">1</button>
+                <button onclick="appendCharacter('2')">2</button>
+                <button onclick="appendCharacter('3')">3</button>
+                <div class="operator">
+
+                    <button onclick=" appendCharacter('+')">+</button>
+                </div>
+            </div>
+            <div class="last-row">
+
+                <button onclick="appendCharacter('0')" class="item-1">0</button>
+                <button onclick="appendCharacter('.')">.</button>
+                <div class="operator">
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/calculator-2.js"></script>
+</body>
+
+</html>
